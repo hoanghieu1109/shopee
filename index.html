@@ -1,0 +1,1415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <!-- fonts -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.3-web/css/all.min.css">
+    <!-- bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <!-- Latest compiled JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid">
+                <nav class="header__navbar">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item">
+                            <span class="header__navbar-title--no-pointer header__navbar-item--separate">Kênh Người Bán</span>
+                        </li>
+                        <li class="header__navbar-item">
+                            <span class="header__navbar-title--no-pointer header__navbar-item--separate">Trở Thành Người Bán Shopee</span>
+                        </li>
+                        <li class="header__navbar-item header__navbar-item--has-qr header__navbar-item--separate">
+                            Tải ứng dụng
+                            <div class="header__qr">
+                                <img src="./assets/img/qrcode.png" alt="QR code" class="header__qr-img">
+                                <div class="header__qr-apps">
+                                    <a href="" class="header__qr-link"></a>
+                                    <img src="./assets/img/ggplay.png" alt="GG Play" class="header__qr-download-img">
+                                    </a>
+                                    <a href="" class="header__qr-link">
+                                        <img src="./assets/img/appstore.png" alt="APP Store" class="header__qr-download-img">
+                                    </a>
+                                    <!-- <a href="" class="header__qr-link"></a>
+                                    <img src="./assets/img/appgalleyr.png" alt="GG Play" class="header__qr-download-img">
+                                    </a> -->
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <span class="header__navbar-title--no-pointer">Kết nối</span>
+                            <a href="" class="header__navbar-icon-link">
+                                <i class="header__navbar-icon fab fa-facebook"></i>
+                            </a>
+                            <a href="" class="header__navbar-icon-link">
+                                <i class="header__navbar-icon fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item--has-notify">
+                            <a href="#" class="header__navbar-item-link">
+                                <i class="header__navbar-icon far fa-bell"></i>Thông báo
+                            </a>
+                            <div class="header__notify">
+                                <header class="header__notify-header">
+                                    <h3>Thông báo mới nhận</h3>
+                                </header>
+                                <ul class="header__notify-list">
+                                    <li class="header__notify-item"> 
+                                        <a href="" class="header__notify-link">
+                                            <img src="./assets/img/paris.jpg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Mỹ phẩm chính hãng</span>
+                                                <span class="header__notify-description">Mô tả Mỹ phẩm chính hãng</span>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="header__notify-item"> 
+                                        <a href="" class="header__notify-link">
+                                            <img src="./assets/img/paris.jpg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Mỹ phẩm chính hãng</span>
+                                                <span class="header__notify-description">Mô tả Mỹ phẩm chính hãng</span>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="header__notify-item"> 
+                                        <a href="" class="header__notify-link header__notify-item--viewed">
+                                            <img src="./assets/img/paris.jpg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Mỹ phẩm chính hãng</span>
+                                                <span class="header__notify-description">Mô tả Mỹ phẩm chính hãng</span>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="header__notify-item"> 
+                                        <a href="" class="header__notify-link">
+                                            <img src="./assets/img/paris.jpg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Mỹ phẩm chính hãng</span>
+                                                <span class="header__notify-description">Mô tả Mỹ phẩm chính hãng</span>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="header__notify-item"> 
+                                        <a href="" class="header__notify-link">
+                                            <img src="./assets/img/paris.jpg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">
+                                                    Mỹ phẩm chính hãng phẩm chính hãngphẩm chính hãng
+                                                </span>
+                                                <span class="header__notify-description">
+                                                    Mô tả Mỹ phẩm chính hãng phẩm chính hãng phẩm chính hãng
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="header__notify--footer">
+                                    <a href="" class="header__notify--footer-btn">Xem tất cả</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="#" class="header__navbar-item-link">
+                                <i class="header__navbar-icon fas fa-question-circle"></i>Trợ giúp
+                            </a>
+                        </li>
+                        <!-- <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate">
+                            Đăng ký
+                        </li>
+                        <li class="header__navbar-item header__navbar-item--strong">
+                            Đăng nhập
+                        </li> -->
+
+                        <li class="header__navbar-item header__navbar-user">
+                            <img src="./assets/img/images.jpg" alt="" class="header__navbar-user-img">
+                            <span class="header__navbar-user-name">Hiếu</span>
+
+                            <ul class="header__navbar-user-menu">
+                                <li class="header__navbar-user-item">
+                                    <a href="#">Tài Khoản của tôi</a>
+                                </li>
+                                <li class="header__navbar-user-item">
+                                    <a href="#">Địa chỉ của tôi</a>
+                                </li>
+                                <li class="header__navbar-user-item">
+                                    <a href="#">Đơn mua</a>
+                                </li>
+                                <li class="header__navbar-user-item header__navbar-user-item--separate">
+                                    <a href="#">Đăng xuất</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+ 
+                <!-- header-search -->
+                <div class="header-with-search">
+                    <div class="header__logo">
+                        <img src="./assets/img/memorybook.PNG" alt="" class="image-logo">
+                    </div>
+
+                    <div class="header__search">
+                        <div class="header__search-input-wrap">
+                            <input type="text" class="header__search-input" placeholder="Tìm kiếm tại đây">
+                            
+                            <!--seach history-->
+                            <div class="header__search-history">
+                                <h3 class="header__search-history-heading">
+                                    Lich su tim kiem
+                                </h3>
+                                <ul class="header__search-history-list">
+                                    <li class="header__search-history-item">
+                                        <a href="">kem duong da</a>
+                                    </li>
+                                    <li class="header__search-history-item">
+                                        <a href="">kem duong da</a>
+                                    </li>
+                                    <li class="header__search-history-item">
+                                        <a href="">kem duong da</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="header__search-select">
+                            <sapn class="header__search-select-label">
+                                Trong shop
+                            </sapn>
+                            <i class="header__search-select-icon fas fa-angle-down"></i>
+                            
+                            <ul class="header__search-option">
+                                <li class="header__search-option-item header__search-option-item--active">
+                                    <span>Trong shop </span>
+                                    <i class="fas fa-check"></i>
+                                </li>
+                                <li class="header__search-option-item">
+                                    <span>Ngoài shop </span>
+                                    <i class="fas fa-check"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="header__search-btn">
+                            <i class="header__search-btn-icon fas fa-search"></i>
+                        </button>
+                    </div>
+
+                    <!-- cart layout -->
+                    <div class="header__cart">
+                        <div class="header__cart-wrap">
+                            <i class="header__cart-icon fas fa-shopping-cart"></i>
+
+                            <span class="header__cart-notice">3</span>
+                            <!-- header__cart-list--no-cart -->
+                            <div class="header__cart-list">
+                                <img class="header__cart-no-cart-img" src="./assets/img/tải xuống.png" alt="">
+                                <span class="header__cart-list-no-cart-msg">
+                                    Giỏ hàng của bạn trống
+                                </span>
+
+                                <h4 class="header__cart-heading">
+                                    Sản phẩm đã thêm
+                                </h4>
+                                <ul class="header__cart-list-item">
+                                    <!-- cart item -->
+                                    <li class="header__cart-item">
+                                        <img src="./assets/img/dacnhantam1.jfif" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">
+                                                    Đắc nhân tâm
+                                                </h5>
+                                               <div class="header__cart-item-price-wrap">
+                                                <span class="header__cart-item-price">100000</span>
+                                                <span class="header__cart-item-multipl">X</span>
+                                                <span class="header__cart-item-qnt">2</span>
+                                               </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-description">
+                                                    Phân loại
+                                                </span>
+                                                <span class="header__cart-item-remove">
+                                                    Xoá
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="./assets/img/dacnhantam1.jfif" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">
+                                                    Đắc nhân tâm
+                                                </h5>
+                                               <div class="header__cart-item-price-wrap">
+                                                <span class="header__cart-item-price">100000</span>
+                                                <span class="header__cart-item-multipl">X</span>
+                                                <span class="header__cart-item-qnt">2</span>
+                                               </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-description">
+                                                    Phân loại
+                                                </span>
+                                                <span class="header__cart-item-remove">
+                                                    Xoá
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="./assets/img/dacnhantam1.jfif" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">
+                                                    Đắc nhân tâm
+                                                </h5>
+                                               <div class="header__cart-item-price-wrap">
+                                                <span class="header__cart-item-price">100000</span>
+                                                <span class="header__cart-item-multipl">X</span>
+                                                <span class="header__cart-item-qnt">2</span>
+                                               </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-description">
+                                                    Phân loại
+                                                </span>
+                                                <span class="header__cart-item-remove">
+                                                    Xoá
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <a href="#" class="header__cart-view-cart btn btn--primary">Xem giỏ hàng</a>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="utilities">
+                    <ul class="utilities__list">
+                        <li class="utilities__list-item">
+                            <a href="#">Váy</a>
+                        </li>
+                        <li class="utilities__list-item">
+                            <a href="#">Áo Phong</a>
+                        </li>
+                        <li class="utilities__list-item">
+                            <a href="#">Quần</a>
+                        </li>
+                        <li class="utilities__list-item">
+                            <a href="#">Bông Tẩy Trang</a>
+                        </li>
+                        <li class="utilities__list-item">
+                            <a href="#">Balo</a>
+                        </li>
+                        <li class="utilities__list-item">
+                            <a href="#">Dép</a>
+                        </li>
+                        <li class="utilities__list-item">
+                            <a href="#">Khẩu Trang</a>
+                        </li>
+                        <li class="utilities__list-item">
+                            <a href="#">Bánh Tráng</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+       <!-- slidershow and service -->
+        <div class="grid" >
+            <!-- shidershow -->
+
+            <div class="carousel-header">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                      <li data-target="#myCarousel" data-slide-to="1"></li>
+                      <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-interval="1000">
+                        <img class="d-block w-100" src="./assets/img/banner3.png" alt="First slide">
+                      </div>
+                      <div class="carousel-item" data-interval="800">
+                        <img class="d-block w-100" src="./assets/img/banner4.png" alt="Second slide">
+                      </div>
+                      <div class="carousel-item" data-interval="800">
+                        <img class="d-block w-100" src="./assets/img/banner5.png" alt="Third slide">
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+
+                  <div class="col-sm-4">
+                    <img class="mySlides__right" src="./assets/img/bannerr1.png">
+                    <img class="mySlides__right mySlides__right-bt" src="./assets/img/bannerr2.png">
+                  </div>
+            </div>
+
+             <!-- service -->
+
+            <div class="service">
+                <div class="service__row">
+                    <img class="service__row-img" src="./assets/img/tienich1.PNG" alt="">
+                    <h4 class="service__row-text">Yên Tâm Mua Hàng</h4>
+                </div>
+                <div class="service__row">
+                    <img class="service__row-img" src="./assets/img/re.png" alt="">
+                    <h4 class="service__row-text">Gì Cũng Rẻ - Từ 1k</h4>
+                </div>
+                <div class="service__row">
+                    <img class="service__row-img" src="./assets/img/hoanxu.png" alt="">
+                    <h4 class="service__row-text">Hoàn Xu 20% - Đơn Từ 0Đ</h4>
+                </div>
+                <div class="service__row">
+                    <img class="service__row-img" src="./assets/img/napthe.png" alt="">
+                    <h4 class="service__row-text">Nạp Thẻ, Dịch Vụ & Phim</h4>
+                </div>
+                <div class="service__row">
+                    <img class="service__row-img" src="./assets/img/sogiday.gif" alt="">
+                    <h4 class="service__row-text">Shopee Sô Gì Đây</h4>
+                </div>
+                <div class="service__row">
+                    <img class="service__row-img" src="./assets/img/xtra.png" alt="">
+                    <h4 class="service__row-text">Freeship Xtra 70k Mỗi Ngày</h4>
+                </div>
+                <div class="service__row">
+                    <img class="service__row-img" src="./assets/img/hanghieu.png" alt="">
+                    <h4 class="service__row-text">Hàng Hiệu -50%</h4>
+                </div>
+                <div class="service__row">
+                    <img class="service__row-img" src="./assets/img/quocte.png" alt="">
+                    <h4 class="service__row-text">Hàng Quốc Tế</h4>
+                </div>
+                <div class="service__row"> <div class="service__row-img">
+                    <img class="service__row-img" src="./assets/img/kimcuong.png" alt=""> </div>
+                    <h4 class="service__row-text">Shopee Premium</h4>
+                </div>
+                <div class="service__row"><div class="service__row-img">
+                    <img class="service__row-img" src="./assets/img/sieuthi.png" alt=""> </div>
+                    <h4 class="service__row-text">Tech Zoon - Siêu Thị Điện Tử</h4>
+                </div>
+            </div>
+        </div>
+        
+        <div class="app__container">
+            <div class="grid">
+               
+                <!-- banner -->
+                <div class="banner">
+                    <img class="banner__img" src="./assets/img/banner1.PNG" alt="">
+                </div>
+
+                <!-- sales -->  
+                <div class="sales">
+                    <img src="./assets/img/shopmoi.jpg" alt="">
+                    <div class="sales__header">
+                        <span class="sales__header--selling-products">Sản phẩm bán chạy</span>
+                        <span class="sales__header--see-more">
+                            Xem thêm<i class="fas fa-angle-right sales__header--icon"></i>
+                        </span>
+                    </div>
+                    <div class="sales-product">
+                        <div class="sales-product__item">
+                            <div>
+                                <div >
+                                    <img src="./assets/img/sp1.jpg" alt="" class="sales-product__item--img">
+                                </div>
+                                <h4 class="sales-product__price">50000</h4>
+                            </div>
+                            <div class="home-product-item__sale-off">
+                                <span class="home-product-item__sale-off-percent">11%</span>
+                                <span class="home-product-item__sale-off-label">Giảm</span>
+                            </div>
+                        </div>
+                        <div class="sales-product__item">
+                            <img src="./assets/img/sp2.jpg" alt="" class="sales-product__item--img">
+                            <h4 class="sales-product__price">50000</h4>
+                            <div class="home-product-item__sale-off">
+                                <span class="home-product-item__sale-off-percent">45%</span>
+                                <span class="home-product-item__sale-off-label">Giảm</span>
+                            </div>
+                        </div>
+                        <div class="sales-product__item">
+                            <img src="./assets/img/sp3.jpg" alt="" class="sales-product__item--img">
+                            <h4 class="sales-product__price">50000</h4>
+                            <div class="home-product-item__sale-off">
+                                <span class="home-product-item__sale-off-percent">35%</span>
+                                <span class="home-product-item__sale-off-label">Giảm</span>
+                            </div>
+                        </div>
+                        <div class="sales-product__item">
+                            <img src="./assets/img/product1.jpg" alt="" class="sales-product__item--img">
+                            <h4 class="sales-product__price">50000</h4>
+                            <div class="home-product-item__sale-off">
+                                <span class="home-product-item__sale-off-percent">10%</span>
+                                <span class="home-product-item__sale-off-label">Giảm</span>
+                            </div>
+                        </div>
+                        <div class="sales-product__item">
+                            <img src="./assets/img/sp4.jpg" alt="" class="sales-product__item--img">
+                            <h4 class="sales-product__price">50000</h4>
+                        </div>
+                        <div class="sales-product__item">
+                            <img src="./assets/img/sp5.jpg" alt="" class="sales-product__item--img">
+                            <h4 class="sales-product__price">50000</h4>
+                        </div>
+                    </div>
+                    <div class="sales-product">
+                        
+                    </div>
+                    <div class="sales__footer">
+                    </div>
+                </div>
+                
+                <!-- carousel -->
+                <div class="carousel">
+                        <div class="listtable"> Danh mục </div>
+                        <div class="carousel-list">
+                            <div class="carousel-list__row">
+                                <img class="carousel-list__row-img" src="./assets/img/carousel1.png" alt="">
+                                <h4 class="carousel-list__row-text">Thời Trang Nam</h4>
+                            </div>
+                            <div class="carousel-list__row">
+                                <img class="carousel-list__row-img" src="./assets/img/carousel2.png" alt="">
+                                <h4 class="carousel-list__row-text">Điện Thoại & Phụ Kiện</h4>
+                            </div>
+                            <div class="carousel-list__row">
+                                <img class="carousel-list__row-img" src="./assets/img/carousel3.png" alt="">
+                                <h4 class="carousel-list__row-text">Thiết Bị Điện Tử</h4>
+                            </div>
+                            <div class="carousel-list__row">
+                                <img class="carousel-list__row-img" src="./assets/img/carousel4.png" alt="">
+                                <h4 class="carousel-list__row-text">Máy tính & Laptop</h4>
+                            </div>
+                            <div class="carousel-list__row">
+                                <img class="carousel-list__row-img" src="./assets/img/carousel5.png" alt="">
+                                <h4 class="carousel-list__row-text">Máy Ảnh & Máy Quay Phim</h4>
+                            </div>
+                            <div class="carousel-list__row">
+                                <img class="carousel-list__row-img" src="./assets/img/carousel6.png" alt="">
+                                <h4 class="carousel-list__row-text">Đồng Hồ</h4>
+                            </div>
+                            <div class="carousel-list__row">
+                                <img class="carousel-list__row-img" src="./assets/img/carousel1.png" alt="">
+                                <h4 class="carousel-list__row-text">Thời Trang Nam</h4>
+                            </div>
+                            <div class="carousel-list__row">
+                                <img class="carousel-list__row-img" src="./assets/img/carousel2.png" alt="">
+                                <h4 class="carousel-list__row-text">Thời Trang Nam</h4>
+                            </div>
+                            <div class="carousel-list__row">
+                                <img class="carousel-list__row-img" src="./assets/img/carousel3.png" alt="">
+                                <h4 class="carousel-list__row-text">Thời Trang Nam</h4>
+                            </div>
+                            <div class="carousel-list__row">
+                                <img class="carousel-list__row-img" src="./assets/img/carousel4.png" alt="">
+                                <h4 class="carousel-list__row-text">Thời Trang Nam</h4>
+                            </div>
+                            <div class="carousel-list__row">
+                                <img class="carousel-list__row-img" src="./assets/img/carousel4.png" alt="">
+                                <h4 class="carousel-list__row-text">Thời Trang Nam</h4>
+                            </div>
+                            <div class="carousel-list__row">
+                                <img class="carousel-list__row-img" src="./assets/img/carousel4.png" alt="">
+                                <h4 class="carousel-list__row-text">Thời Trang Nam</h4>
+                            </div>
+                            <div class="carousel-list__row">
+                                <img class="carousel-list__row-img" src="./assets/img/carousel4.png" alt="">
+                                <h4 class="carousel-list__row-text">Thời Trang Nam</h4>
+                            </div>
+                            <div class="carousel-list__row">
+                                <img class="carousel-list__row-img" src="./assets/img/carousel4.png" alt="">
+                                <h4 class="carousel-list__row-text">Thời Trang Nam</h4>
+                            </div>
+                            <div class="carousel-list__row">
+                                <img class="carousel-list__row-img" src="./assets/img/carousel4.png" alt="">
+                                <h4 class="carousel-list__row-text">Thời Trang Nam</h4>
+                            </div>
+                            <div class="carousel-list__row">
+                                <img class="carousel-list__row-img" src="./assets/img/carousel4.png" alt="">
+                                <h4 class="carousel-list__row-text">Thời Trang Nam</h4>
+                            </div>
+                            <div class="carousel-list__row">
+                                <img class="carousel-list__row-img" src="./assets/img/carousel4.png" alt="">
+                                <h4 class="carousel-list__row-text">Thời Trang Nam</h4>
+                            </div>
+                            <div class="carousel-list__row">
+                                <img class="carousel-list__row-img" src="./assets/img/carousel4.png" alt="">
+                                <h4 class="carousel-list__row-text">Thời Trang Nam</h4>
+                            </div>
+                            <div class="carousel-list__row">
+                                <img class="carousel-list__row-img" src="./assets/img/carousel4.png" alt="">
+                                <h4 class="carousel-list__row-text">Thời Trang Nam</h4>
+                            </div>
+                            <div class="carousel-list__row">
+                                <img class="carousel-list__row-img" src="./assets/img/carousel4.png" alt="">
+                                <h4 class="carousel-list__row-text">Thời Trang Nam</h4>
+                            </div>
+                        </div>
+                </div>
+
+                 <!-- flashsales -->  
+                 
+                <div class="flashsale">
+                        <div class="flashsale__header">
+                            <span class="flashsale__header--selling-products">F<i class="fas fa-bolt"></i>ASH <span class="flashsale__header--sale-products">SALE</span></span>
+                            <span class="flashsale__header--see-more">
+                                Xem tất cả<i class="fas fa-angle-right flashsale__header--icon"></i>
+                            </span>
+                        </div>
+                        <div class="flashsale-product">
+                            <div class="flashsale-product__item">
+                                <div>
+                                    <div >
+                                        <img src="./assets/img/product1.jpg" alt="" class="flashsale-product__item--img">
+                                    </div>
+                                    <h4 class="flashsale-product__price">50000</h4>
+                                    <div class="flashsale-product__item-sold">
+                                        <span class="flashsale-product__item-sold--text">đã bán 57</span>
+                                    </div>
+                                </div>
+                                <div class="home-product-item__sale-off">
+                                    <span class="home-product-item__sale-off-percent">11%</span>
+                                    <span class="home-product-item__sale-off-label">Giảm</span>
+                                </div>
+                            </div>
+                            <div class="flashsale-product__item">
+                                <img src="./assets/img/sp2.jpg" alt="" class="flashsale-product__item--img">
+                                <h4 class="flashsale-product__price">50000</h4>
+                                <div class="home-product-item__sale-off">
+                                    <span class="home-product-item__sale-off-percent">45%</span>
+                                    <span class="home-product-item__sale-off-label">Giảm</span>
+                                </div>
+                            </div>
+                            <div class="flashsale-product__item">
+                                <img src="./assets/img/sp3.jpg" alt="" class="flashsale-product__item--img">
+                                <h4 class="flashsale-product__price">50000</h4>
+                                <div class="home-product-item__sale-off">
+                                    <span class="home-product-item__sale-off-percent">35%</span>
+                                    <span class="home-product-item__sale-off-label">Giảm</span>
+                                </div>
+                            </div>
+                            <div class="flashsale-product__item">
+                                <img src="./assets/img/product1.jpg" alt="" class="flashsale-product__item--img">
+                                <h4 class="flashsale-product__price">50000</h4>
+                                <div class="home-product-item__sale-off">
+                                    <span class="home-product-item__sale-off-percent">10%</span>
+                                    <span class="home-product-item__sale-off-label">Giảm</span>
+                                </div>
+                            </div>
+                            <div class="flashsale-product__item">
+                                <img src="./assets/img/sp4.jpg" alt="" class="flashsale-product__item--img">
+                                <h4 class="sales-product__price">50000</h4>
+                            </div>
+                            <div class="flashsale-product__item">
+                                <img src="./assets/img/sp5.jpg" alt="" class="sales-product__item--img">
+                                <h4 class="sales-product__price">50000</h4>
+                            </div>
+                        </div>
+                </div>
+
+                <!-- skinnybanner -->
+
+                <div class="skinny-banner">
+                    <img class="skinny-banner__img" src="./assets/img/flsale1.png" alt="">
+                    <img class="skinny-banner__img" src="./assets/img/flsale2.jpg" alt="">
+                    <img class="skinny-banner__img" src="./assets/img/flsale3.jpg" alt="">
+                </div>
+              
+                <!-- shopeemall -->  
+                <div class="shopeemall">
+                    <div class="shopeemall__header">
+                        <div class="shopeemall__header-item">
+                            <span class="shopeemall__header-mall">shopee mall</span>
+                            <div class="shopeemall__header-item--menu">
+                                <span class="shopeemall__header-item--menu-sevice">
+                                    <i class="fas fa-undo-alt shopeemall__header-item--menu-sevice-icon"></i>7 Ngày Miễn Phí Trả Hàng
+                                </span>
+                                <span class="shopeemall__header-item--menu-sevice">
+                                    <i class="fas fa-clipboard-check shopeemall__header-item--menu-sevice-icon"></i>Hàng Chính Hãng 100%
+                                </span>
+                                <span class="shopeemall__header-item--menu-sevice">
+                                    <i class="fas fa-shuttle-van shopeemall__header-item--menu-sevice-icon"></i>Miễn Phí Vận Chuyển
+                                </span>
+                            </div>
+                        </div>
+                        <span class="shopeemall__header--see-more">
+                            Xem tất cả<i class="fas fa-chevron-circle-right shopeemall__header--see-more-icon"></i>
+                        </span>
+                    </div>
+                    <div class="shopeemall-main">
+                        <div class="shopeemall-main__left">
+                            
+                            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                                  <li data-target="#myCarousel" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active" data-interval="1000">
+                                    <img class="d-block w-100" src="./assets/img/mall1.png" alt="First slide">
+                                  </div>
+                                  <div class="carousel-item" data-interval="800">
+                                    <img class="d-block w-100" src="./assets/img/mall2.jpg" alt="Second slide">
+                                  </div>
+                                  <div class="carousel-item" data-interval="600">
+                                    <img class="d-block w-100" src="./assets/img/mall3.png" alt="Third slide">
+                                  </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="sr-only">Next</span>
+                                </a>
+                              </div>
+                           
+                        </div>
+                        <div class="shopeemall-main__right">
+                            <div class="shopeemall-main__right-products">
+                                <div class="shopeemall-main__right-item">
+                                    <a href=""><img class="shopeemall-main__right-item-img" src="./assets/img/mall6.png" alt=""></a>
+                                    <span class="shopeemall-main__right-item-subtittle">Mát lạnh dài lâu</span>
+                                </div>
+                                <div class="shopeemall-main__right-item">
+                                    <a href=""><img class="shopeemall-main__right-item-img" src="./assets/img/mall7.png" alt=""></a>
+                                    <span class="shopeemall-main__right-item-subtittle">Mát lạnh dài lâu</span>
+                                </div>
+                                <div class="shopeemall-main__right-item">
+                                    <a href=""><img class="shopeemall-main__right-item-img" src="./assets/img/mall8.png" alt=""></a>
+                                    <span class="shopeemall-main__right-item-subtittle">Mát lạnh dài lâu</span>
+                                </div>
+                                <div class="shopeemall-main__right-item">
+                                    <a href=""><img class="shopeemall-main__right-item-img" src="./assets/img/mall6.png" alt=""></a>
+                                    <span class="shopeemall-main__right-item-subtittle">Mát lạnh dài lâu</span>
+                                </div>
+                                <div class="shopeemall-main__right-item">
+                                    <a href=""><img class="shopeemall-main__right-item-img" src="./assets/img/mall7.png" alt=""></a>
+                                    <span class="shopeemall-main__right-item-subtittle">Mát lạnh dài lâu</span>
+                                </div>
+                                <div class="shopeemall-main__right-item">
+                                    <a href=""><img class="shopeemall-main__right-item-img" src="./assets/img/mall8.png" alt=""></a>
+                                    <span class="shopeemall-main__right-item-subtittle">Mát lạnh dài lâu</span>
+                                </div>
+                                <div class="shopeemall-main__right-item">
+                                    <a href=""><img class="shopeemall-main__right-item-img" src="./assets/img/mall6.png" alt=""></a>
+                                    <span class="shopeemall-main__right-item-subtittle">Mát lạnh dài lâu</span>
+                                </div>
+                                <div class="shopeemall-main__right-item">
+                                    <a href=""><img class="shopeemall-main__right-item-img" src="./assets/img/mall8.png" alt=""></a>
+                                    <span class="shopeemall-main__right-item-subtittle">Mát lạnh dài lâu</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+                <!-- search trends -->
+              
+                <div class="trend">
+                        <div class="search-trends"> Xu hướng tìm kiếm 
+                            <span class="search-trends__watch">
+                                <i class="fas fa-sync-alt search-trends__watch-icon"></i>Xem thêm
+                            </span>
+                        </div>
+                        <div class="trend-list">
+                            <div class="trend-list__row">
+                                <h4 class="trend-list__row-name">Tai Nghe Bluetooh</h4>
+                                <h5 class="trend-list__row-price">166k+ Sản phẩm</h5>
+                            </div>
+                            <div class="trend-list__row">
+                                <img class="trend-list__row-img" src="./assets/img/trend1.jpg" alt="">
+                            </div>
+                            <div class="trend-list__row">
+                                <h4 class="trend-list__row-name"> Sandal Nữ</h4>
+                                <h5 class="trend-list__row-price">206k+ Sản phẩm</h5>
+                            </div>
+                            <div class="trend-list__row">
+                                <img class="trend-list__row-img" src="./assets/img/trend2.jpg" alt="">
+                            </div>
+                            <div class="trend-list__row">
+                                <h4 class="trend-list__row-name">Giày Thể Thao Nữ</h4>
+                                <h5 class="trend-list__row-price">179k+ Sản phẩm</h5>
+                            </div>
+                            <div class="trend-list__row">
+                                <img class="trend-list__row-img" src="./assets/img/trend3.jpg" alt="">
+                            </div>
+                            <div class="trend-list__row">
+                                <h4 class="trend-list__row-name">Balo Nữ</h4>
+                                <h5 class="trend-list__row-price">189k+ Sản phẩm</h5>
+                            </div>
+                            <div class="trend-list__row">
+                                <img class="trend-list__row-img" src="./assets/img/trend4.jpg" alt="">
+                            </div>
+                            <div class="trend-list__row">
+                                <h4 class="trend-list__row-name">Croptop Nữ</h4>
+                                <h5 class="trend-list__row-price">199k+ Sản phẩm</h5>
+                            </div>
+                            <div class="trend--list__row">
+                                <img class="trend-list__row-img" src="./assets/img/trend5.jpg" alt="">
+                            </div>
+                        </div>
+                </div>
+               
+                <!-- top search -->
+                
+                <div class="topsearch">
+                        <div class="topsearch__header">
+                            <span class="topsearch__header--selling-products">Tìm kiếm hàng đầu</span>
+                            <span class="topsearch__header--see-more">
+                                Xem tất cả<i class="fas fa-angle-right topsearch__header--icon"></i>
+                            </span>
+                        </div>
+                        <div class="topsearch-product">
+                            <div class="topsearch-product__item">
+                                <div>
+                                    <div >
+                                        <img src="./assets/img/bong.jpg" alt="" class="topsearch-product__item--img">
+                                    </div>
+                                    <h4 class="topsearch-product__price">Bán 107k+ / tháng</h4>
+                                    <div class="topsearch-product__item-sold">
+                                        <span class="topsearch-product__item-sold--text">Bông tẩy trang 3 lớp Cotton Pads  Cotton Pads</span>
+                                    </div>
+                                </div>
+                                <div class="topsearch__sale-off">
+                                    <span class="topsearch__sale-off-label">top</span>
+                                </div>
+                            </div>
+                            <div class="topsearch-product__item">
+                                <div>
+                                    <div >
+                                        <img src="./assets/img/bong.jpg" alt="" class="topsearch-product__item--img">
+                                    </div>
+                                    <h4 class="topsearch-product__price">Bán 107k+ / tháng</h4>
+                                    <div class="topsearch-product__item-sold">
+                                        <span class="topsearch-product__item-sold--text">Bông tẩy trang 3 lớp Cotton Pads  Cotton Pads</span>
+                                    </div>
+                                </div>
+                                <div class="topsearch__sale-off">
+                                    <span class="topsearch__sale-off-label">top</span>
+                                </div>
+                            </div>
+                            <div class="topsearch-product__item">
+                                <div>
+                                    <div >
+                                        <img src="./assets/img/bong.jpg" alt="" class="topsearch-product__item--img">
+                                    </div>
+                                    <h4 class="topsearch-product__price">Bán 107k+ / tháng</h4>
+                                    <div class="topsearch-product__item-sold">
+                                        <span class="topsearch-product__item-sold--text">Bông tẩy trang 3 lớp Cotton Pads  Cotton Pads</span>
+                                    </div>
+                                </div>
+                                <div class="topsearch__sale-off">
+                                    <span class="topsearch__sale-off-label">top</span>
+                                </div>
+                            </div>
+                            <div class="topsearch-product__item">
+                                <div>
+                                    <div >
+                                        <img src="./assets/img/bong.jpg" alt="" class="topsearch-product__item--img">
+                                    </div>
+                                    <h4 class="topsearch-product__price">Bán 107k+ / tháng</h4>
+                                    <div class="topsearch-product__item-sold">
+                                        <span class="topsearch-product__item-sold--text">Bông tẩy trang 3 lớp Cotton Pads  Cotton Pads</span>
+                                    </div>
+                                </div>
+                                <div class="topsearch__sale-off">
+                                    <span class="topsearch__sale-off-label">top</span>
+                                </div>
+                            </div>
+                            <div class="topsearch-product__item">
+                                <div>
+                                    <div >
+                                        <img src="./assets/img/bong.jpg" alt="" class="topsearch-product__item--img">
+                                    </div>
+                                    <h4 class="topsearch-product__price">Bán 107k+ / tháng</h4>
+                                    <div class="topsearch-product__item-sold">
+                                        <span class="topsearch-product__item-sold--text">Bông tẩy trang 3 lớp Cotton Pads  Cotton Pads</span>
+                                    </div>
+                                </div>
+                                <div class="topsearch__sale-off">
+                                    <span class="topsearch__sale-off-label">top</span>
+                                </div>
+                            </div>
+                            <div class="topsearch-product__item">
+                                <div>
+                                    <div >
+                                        <img src="./assets/img/bong.jpg" alt="" class="topsearch-product__item--img">
+                                    </div>
+                                    <h4 class="topsearch-product__price">Bán 107k+ / tháng</h4>
+                                    <div class="topsearch-product__item-sold">
+                                        <span class="topsearch-product__item-sold--text">Bông tẩy trang 3 lớp Cotton Pads  Cotton Pads</span>
+                                    </div>
+                                </div>
+                                <div class="topsearch__sale-off">
+                                    <span class="topsearch__sale-off-label">top</span>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+               
+
+
+                <div class="suggest">
+                    <span class="suggest-text">Gợi ý hôm nay</span>
+                    <img class="suggest-img" src="./assets/img/hoanxtra.png" alt="">
+                </div>
+
+               
+                <!-- product -->
+                <div class="home-products">
+                    <div class="home-product">
+                        <div class="grid__row">
+                            <div class="grid__column-2-4">
+                                <a href="#" class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://salt.tikicdn.com/cache/200x200/media/catalog/producttmp/09/52/ef/aaf81120c34054acf5d54fe405acbfbc.jpg)"></div>
+                                    <h4 class="home-product-item__name">
+                                        Tất cả chỉ là ý nghĩa 1
+                                    </h4>
+                                    <div class="home-product-item-discount">
+                                        <span class="home-product-item-discount-text">50% Giảm</span>
+                                    </div>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-current">150000</span>
+                                        <span class="home-product-item__item__sold">Đã bán 88</span>
+                                    </div>
+
+                                    <div class="home-product-item__hover"></div> 
+                                    <div class="home-product-item__product-same">Tìm sản phẩm tương tự</div>
+                                    <div class="home-product-item__favourite">
+                                        <i class="fas fa-check"></i>
+                                        <span>Yêu thích</span>
+                                    </div>
+                                    <div class="home-product-item__sale-off">
+                                        <span class="home-product-item__sale-off-percent">10%</span>
+                                        <span class="home-product-item__sale-off-label">Giảm</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="home-product">
+                        <div class="grid__row">
+                            <div class="grid__column-2-4">
+                                <a href="#" class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/461691071df30827265cc48e9b5e76f3)"></div>
+                                    <h4 class="home-product-item__name">
+                                        Dây chuyền dáng ngắn phong cách hiphop cá tính, thời trang, phong cách
+                                    </h4>
+                                    <div class="home-product-item-discount">
+                                        <span class="home-product-item-discount-text">50% Giảm</span>
+                                    </div>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-current">150000</span>
+                                        <span class="home-product-item__item__sold">Đã bán 88</span>
+                                    </div>
+                                    <div class="home-product-item__hover"></div> 
+                                    <div class="home-product-item__product-same">Tìm sản phẩm tương tự</div>
+                                    <div class="home-product-item__favourite">
+                                        <i class="fas fa-check"></i>
+                                        <span>Yêu thích</span>
+                                    </div>
+                                    <div class="home-product-item__sale-off">
+                                        <span class="home-product-item__sale-off-percent">10%</span>
+                                        <span class="home-product-item__sale-off-label">Giảm</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="home-product">
+                        <div class="grid__row">
+                            <div class="grid__column-2-4">
+                                <a href="#" class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://salt.tikicdn.com/cache/200x200/media/catalog/producttmp/09/52/ef/aaf81120c34054acf5d54fe405acbfbc.jpg)"></div>
+                                    <h4 class="home-product-item__name">
+                                        Tất cả chỉ là ý nghĩa 1
+                                    </h4>
+                                    <div class="home-product-item-discount">
+                                        <span class="home-product-item-discount-text">50% Giảm</span>
+                                    </div>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-current">150000</span>
+                                        <span class="home-product-item__item__sold">Đã bán 88</span>
+                                    </div>
+
+                                    <div class="home-product-item__hover"></div> 
+                                    <div class="home-product-item__product-same">Tìm sản phẩm tương tự</div>
+                                    <div class="home-product-item__favourite">
+                                        <i class="fas fa-check"></i>
+                                        <span>Yêu thích</span>
+                                    </div>
+                                    <div class="home-product-item__sale-off">
+                                        <span class="home-product-item__sale-off-percent">10%</span>
+                                        <span class="home-product-item__sale-off-label">Giảm</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="home-product">
+                        <div class="grid__row">
+                            <div class="grid__column-2-4">
+                                <a href="#" class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/461691071df30827265cc48e9b5e76f3)"></div>
+                                    <h4 class="home-product-item__name">
+                                        Dây chuyền dáng ngắn phong cách hiphop cá tính, thời trang, phong cách
+                                    </h4>
+                                    <div class="home-product-item-discount">
+                                        <span class="home-product-item-discount-text">50% Giảm</span>
+                                    </div>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-current">150000</span>
+                                        <span class="home-product-item__item__sold">Đã bán 88</span>
+                                    </div>
+                                    <div class="home-product-item__hover"></div> 
+                                    <div class="home-product-item__product-same">Tìm sản phẩm tương tự</div>
+                                    <div class="home-product-item__favourite">
+                                        <i class="fas fa-check"></i>
+                                        <span>Yêu thích</span>
+                                    </div>
+                                    <div class="home-product-item__sale-off">
+                                        <span class="home-product-item__sale-off-percent">10%</span>
+                                        <span class="home-product-item__sale-off-label">Giảm</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="home-product">
+                        <div class="grid__row">
+                            <div class="grid__column-2-4">
+                                <a href="#" class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://salt.tikicdn.com/cache/200x200/media/catalog/producttmp/09/52/ef/aaf81120c34054acf5d54fe405acbfbc.jpg)"></div>
+                                    <h4 class="home-product-item__name">
+                                        Tất cả chỉ là ý nghĩa 1
+                                    </h4>
+                                    <div class="home-product-item-discount">
+                                        <span class="home-product-item-discount-text">50% Giảm</span>
+                                    </div>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-current">150000</span>
+                                        <span class="home-product-item__item__sold">Đã bán 88</span>
+                                    </div>
+
+                                    <div class="home-product-item__hover"></div> 
+                                    <div class="home-product-item__product-same">Tìm sản phẩm tương tự</div>
+                                    <div class="home-product-item__favourite">
+                                        <i class="fas fa-check"></i>
+                                        <span>Yêu thích</span>
+                                    </div>
+                                    <div class="home-product-item__sale-off">
+                                        <span class="home-product-item__sale-off-percent">10%</span>
+                                        <span class="home-product-item__sale-off-label">Giảm</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="home-product">
+                        <div class="grid__row">
+                            <div class="grid__column-2-4">
+                                <a href="#" class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/461691071df30827265cc48e9b5e76f3)"></div>
+                                    <h4 class="home-product-item__name">
+                                        Dây chuyền dáng ngắn phong cách hiphop cá tính, thời trang, phong cách
+                                    </h4>
+                                    <div class="home-product-item-discount">
+                                        <span class="home-product-item-discount-text">50% Giảm</span>
+                                    </div>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-current">150000</span>
+                                        <span class="home-product-item__item__sold">Đã bán 88</span>
+                                    </div>
+                                    <div class="home-product-item__hover"></div> 
+                                    <div class="home-product-item__product-same">Tìm sản phẩm tương tự</div>
+                                    <div class="home-product-item__favourite">
+                                        <i class="fas fa-check"></i>
+                                        <span>Yêu thích</span>
+                                    </div>
+                                    <div class="home-product-item__sale-off">
+                                        <span class="home-product-item__sale-off-percent">10%</span>
+                                        <span class="home-product-item__sale-off-label">Giảm</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="home-product">
+                        <div class="grid__row">
+                            <div class="grid__column-2-4">
+                                <a href="#" class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://salt.tikicdn.com/cache/200x200/media/catalog/producttmp/09/52/ef/aaf81120c34054acf5d54fe405acbfbc.jpg)"></div>
+                                    <h4 class="home-product-item__name">
+                                        Tất cả chỉ là ý nghĩa 1
+                                    </h4>
+                                    <div class="home-product-item-discount">
+                                        <span class="home-product-item-discount-text">50% Giảm</span>
+                                    </div>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-current">150000</span>
+                                        <span class="home-product-item__item__sold">Đã bán 88</span>
+                                    </div>
+
+                                    <div class="home-product-item__hover"></div> 
+                                    <div class="home-product-item__product-same">Tìm sản phẩm tương tự</div>
+                                    <div class="home-product-item__favourite">
+                                        <i class="fas fa-check"></i>
+                                        <span>Yêu thích</span>
+                                    </div>
+                                    <div class="home-product-item__sale-off">
+                                        <span class="home-product-item__sale-off-percent">10%</span>
+                                        <span class="home-product-item__sale-off-label">Giảm</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="home-product">
+                        <div class="grid__row">
+                            <div class="grid__column-2-4">
+                                <a href="#" class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/461691071df30827265cc48e9b5e76f3)"></div>
+                                    <h4 class="home-product-item__name">
+                                        Dây chuyền dáng ngắn phong cách hiphop cá tính, thời trang, phong cách
+                                    </h4>
+                                    <div class="home-product-item-discount">
+                                        <span class="home-product-item-discount-text">50% Giảm</span>
+                                    </div>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-current">150000</span>
+                                        <span class="home-product-item__item__sold">Đã bán 88</span>
+                                    </div>
+                                    <div class="home-product-item__hover"></div> 
+                                    <div class="home-product-item__product-same">Tìm sản phẩm tương tự</div>
+                                    <div class="home-product-item__favourite">
+                                        <i class="fas fa-check"></i>
+                                        <span>Yêu thích</span>
+                                    </div>
+                                    <div class="home-product-item__sale-off">
+                                        <span class="home-product-item__sale-off-percent">10%</span>
+                                        <span class="home-product-item__sale-off-label">Giảm</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="home-product">
+                        <div class="grid__row">
+                            <div class="grid__column-2-4">
+                                <a href="#" class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://salt.tikicdn.com/cache/200x200/media/catalog/producttmp/09/52/ef/aaf81120c34054acf5d54fe405acbfbc.jpg)"></div>
+                                    <h4 class="home-product-item__name">
+                                        Tất cả chỉ là ý nghĩa 1
+                                    </h4>
+                                    <div class="home-product-item-discount">
+                                        <span class="home-product-item-discount-text">50% Giảm</span>
+                                    </div>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-current">150000</span>
+                                        <span class="home-product-item__item__sold">Đã bán 88</span>
+                                    </div>
+
+                                    <div class="home-product-item__hover"></div> 
+                                    <div class="home-product-item__product-same">Tìm sản phẩm tương tự</div>
+                                    <div class="home-product-item__favourite">
+                                        <i class="fas fa-check"></i>
+                                        <span>Yêu thích</span>
+                                    </div>
+                                    <div class="home-product-item__sale-off">
+                                        <span class="home-product-item__sale-off-percent">10%</span>
+                                        <span class="home-product-item__sale-off-label">Giảm</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="home-product">
+                        <div class="grid__row">
+                            <div class="grid__column-2-4">
+                                <a href="#" class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/461691071df30827265cc48e9b5e76f3)"></div>
+                                    <h4 class="home-product-item__name">
+                                        Dây chuyền dáng ngắn phong cách hiphop cá tính, thời trang, phong cách
+                                    </h4>
+                                    <div class="home-product-item-discount">
+                                        <span class="home-product-item-discount-text">50% Giảm</span>
+                                    </div>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-current">150000</span>
+                                        <span class="home-product-item__item__sold">Đã bán 88</span>
+                                    </div>
+                                    <div class="home-product-item__hover"></div> 
+                                    <div class="home-product-item__product-same">Tìm sản phẩm tương tự</div>
+                                    <div class="home-product-item__favourite">
+                                        <i class="fas fa-check"></i>
+                                        <span>Yêu thích</span>
+                                    </div>
+                                    <div class="home-product-item__sale-off">
+                                        <span class="home-product-item__sale-off-percent">10%</span>
+                                        <span class="home-product-item__sale-off-label">Giảm</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="home-product">
+                        <div class="grid__row">
+                            <div class="grid__column-2-4">
+                                <a href="#" class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://salt.tikicdn.com/cache/200x200/media/catalog/producttmp/09/52/ef/aaf81120c34054acf5d54fe405acbfbc.jpg)"></div>
+                                    <h4 class="home-product-item__name">
+                                        Tất cả chỉ là ý nghĩa 1
+                                    </h4>
+                                    <div class="home-product-item-discount">
+                                        <span class="home-product-item-discount-text">50% Giảm</span>
+                                    </div>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-current">150000</span>
+                                        <span class="home-product-item__item__sold">Đã bán 88</span>
+                                    </div>
+
+                                    <div class="home-product-item__hover"></div> 
+                                    <div class="home-product-item__product-same">Tìm sản phẩm tương tự</div>
+                                    <div class="home-product-item__favourite">
+                                        <i class="fas fa-check"></i>
+                                        <span>Yêu thích</span>
+                                    </div>
+                                    <div class="home-product-item__sale-off">
+                                        <span class="home-product-item__sale-off-percent">10%</span>
+                                        <span class="home-product-item__sale-off-label">Giảm</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="home-product">
+                        <div class="grid__row">
+                            <div class="grid__column-2-4">
+                                <a href="#" class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/461691071df30827265cc48e9b5e76f3)"></div>
+                                    <h4 class="home-product-item__name">
+                                        Dây chuyền dáng ngắn phong cách hiphop cá tính, thời trang, phong cách
+                                    </h4>
+                                    <div class="home-product-item-discount">
+                                        <span class="home-product-item-discount-text">50% Giảm</span>
+                                    </div>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-current">150000</span>
+                                        <span class="home-product-item__item__sold">Đã bán 88</span>
+                                    </div>
+                                    <div class="home-product-item__hover"></div> 
+                                    <div class="home-product-item__product-same">Tìm sản phẩm tương tự</div>
+                                    <div class="home-product-item__favourite">
+                                        <i class="fas fa-check"></i>
+                                        <span>Yêu thích</span>
+                                    </div>
+                                    <div class="home-product-item__sale-off">
+                                        <span class="home-product-item__sale-off-percent">10%</span>
+                                        <span class="home-product-item__sale-off-label">Giảm</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                <div class="see-more home-products__seemode">
+                    <a  class="see-more__text" href="">Xem thêm</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="content_footer">
+            <div class="grid">
+            <div class="content1">
+                <h3 class="fotn_b">SHOPEE - GÌ CŨNG CÓ, MUA HẾT Ở SHOPEE</h3>
+                <p>Shopee - ứng dụng mua sắm trực tuyến thú vị, tin cậy, an toàn và miễn phí! Shopee là nền tảng giao dịch trực tuyến hàng đầu ở Đông Nam Á, Việt Nam, <a>Singapore</a>, <a>Malaysia</a>, <a>Indonesia</a>, <a>Thái Lan</a>, <a>Philipin</a>, Đài loan và Brazil.
+             <br>Với sự đảm bảo của Shopee, bạn sẽ mua hàng trực tuyến an tâm và nhanh chóng hơn bao giờ hết!<br>
+                </p>
+            </div>
+            <div class="content1">
+                <h3 class="fotn_b">MUA SẮM VÀ BÁN HÀNG ONLINE ĐƠN GIẢN, NHANH CHÓNG VÀ AN TOÀN</h3>
+                <p>
+                 Nếu bạn đang tìm kiếm một trang web để mua và bán hàng trực tuyến thì <a>Shopee.vn</a> là một sự lựa chọn tuyệt vời dành cho bạn.
+                 Bản chất của Shopee là một social E-commerce platform - nền tảng trang web thương mại điện tử tích hợp mạng xã hội.
+                 Điều này cho phép người mua và người bán hàng dễ dàng tương tác, trao đổi thông tin về sản phẩm và chương trình khuyến mãi của shop.
+                 Nhờ nền tảng đó, việc mua bán trên Shopee trở nên nhanh chóng và đơn giản hơn.
+                 Bạn có thể trò chuyện trực tiếp với nhà bán hàng để hỏi trực tiếp về mặt hàng cần mua. 
+                 Còn nếu bạn muốn tìm mua những dòng sản phẩm chính hãng, uy tín, Shopee Mall chính là sự lựa chọn lí tưởng dành cho bạn. 
+                 Đến với Shopee, cơ hội để trở thành một nhà bán hàng dễ dàng hơn bao giờ hết. 
+                 Chỉ với vài thao tác trên ứng dụng, bạn đã có thể đăng bán ngay những sản phẩm của mình.
+                 Không những thế, các nhà bán hàng có thể tùy chọn các tính năng “Shop tạm nghỉ” hoặc tự tạo chương trình khuyến mãi trên Shopee để thu hút người mua với những sản phẩm có mức giá hấp dẫn. Khi đăng nhập tại Shopee Kênh người bán, bạn có thể dễ dàng phân loại sản phẩm, theo dõi đơn hàng, chăm sóc khách hàng và cập nhập ngay các hoạt động của shop.
+                </p>
+            </div>
+            <div class="content1">
+                <h3 class="fotn_b">TẢI ỨNG DỤNG SHOPEE NGAY ĐỂ MUA BÁN ONLINE MỌI LÚC, MỌI NƠI</h3>
+                <p>
+                 Ưu điểm của ứng dụng Shopee là cho phép bạn mua và bán hàng mọi lúc, mọi nơi. Bạn có thể tải ứng dụng Shopee cũng như đăng sản phẩm bán hàng một cách nhanh chóng và tiện lợi.
+                 Ngoài ra, ứng dụng Shopee còn có những ưu điểm sau: - Giao diện thân thiện, đơn giản, dễ sử dụng. Bạn sẽ dễ dàng thấy được ngay những sản phẩm nổi bật cũng như dễ dàng tìm đến các ô tìm kiếm, giỏ hàng hoặc tính năng chat liền tay. - Ứng dụng tích hợp công nghệ quản lý đơn mua và bán hàng tiện lợi trên cùng một tài khoản. 
+                 Bạn sẽ vừa là người mua hàng, vừa là người bán hàng rất linh hoạt, dễ dàng. - Cập nhập thông tin khuyến mãi, Shopee flash sale nhanh chóng và liên tục. Tại Shopee, bạn có thể lấy các mã giảm giá Shopee và mã miễn phí vận chuyển toàn quốc. Bên cạnh đó, Shopee cũng sẽ có những chiến dịch khuyến mãi lớn hằng năm như Siêu hội mua sắm 4.4, Shopee 9.9 sale, Shopee 10.10 sale, Shopee 11.11 sale, Shopee 12.12 sale, Shopee Tết Sale.
+                  Đây là thời điểm để người mua hàng có thể nhanh tay chọn ngay cho mình những mặt hàng ưa thích với mức giá giảm kỉ lục.
+                </p>
+            </div>
+            <div class="content1">
+                <h3 class="fotn_b">MUA HÀNG HIỆU CAO CẤP GIÁ TỐT TẠI SHOPEE</h3>
+                <p>Bên cạnh Shopee Premium, Shopee còn có rất nhiều khuyến mãi khủng cho hàng hiệu giảm đến 50%. Cộng với mã giao hàng miễn phí, Shopee cũng có các mã giảm giá được phân phối mỗi tháng từ rất nhiều gian hàng chính hãng tham gia chương trình khuyến mãi này.
+                     Bên cạnh đó, Shopee còn tập hợp rất nhiều thương hiệu đình đám được các nhà bán lẻ uy tín phân phối bán trên Shopee, đem đến cho bạn sự lựa chọn đa dạng, từ các hãng mỹ phẩm nổi tiếng hàng đầu như Kiehl's, Fresh, The Ordinary, Foreo, Transino, SK-II...
+                      Đến những thương hiệu công nghệ nổi tiếng như camera hành trình Gopro, loa Marshall, bảng vẽ điện tử Huion, máy quay DJI Osmo Pocket, loa Harman Kardon, Razer...
+                </p>
+            </div>
+            <div class="content1">
+                <h3 class="fotn_b">SHOPEE - GÌ CŨNG CÓ, MUA HẾT Ở SHOPEE</h3>
+                <p>Bên cạnh Shopee Premium, Shopee còn có rất nhiều khuyến mãi khủng cho hàng hiệu giảm đến 50%. Cộng với mã giao hàng miễn phí, Shopee cũng có các mã giảm giá được phân phối mỗi tháng từ rất nhiều gian hàng chính hãng tham gia chương trình khuyến mãi này.
+                     Bên cạnh đó, Shopee còn tập hợp rất nhiều thương hiệu đình đám được các nhà bán lẻ uy tín phân phối bán trên Shopee, đem đến cho bạn sự lựa chọn đa dạng, từ các hãng mỹ phẩm nổi tiếng hàng đầu như Kiehl's, Fresh, The Ordinary, Foreo, Transino, SK-II...
+                      Đến những thương hiệu công nghệ nổi tiếng như camera hành trình Gopro, loa Marshall, bảng vẽ điện tử Huion, máy quay DJI Osmo Pocket, loa Harman Kardon, Razer...
+                </p>
+            </div>
+        </div>
+        </div>
+        <footer class="footer"> 
+            <div class="grid">
+                <div class="grid__row">
+                    <div class="grid__column-2">
+                        <h3 class="footer__heading">Chăm sóc khách hàng</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="#" class="footer-item__link">Trung tâm trợ giúp</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#" class="footer-item__link">Shopee Mall</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#" class="footer-item__link">Hướng dẫn mua hàng</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-2">
+                        <h3 class="footer__heading">Về shopee</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="#" class="footer-item__link">Giới Thiệu Về Shopee Việt Nam</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#" class="footer-item__link">Tuyển dụng</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#" class="footer-item__link">Điều Khoản Shopee</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#" class="footer-item__link">Chính Sách Bảo Mật</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#" class="footer-item__link">Chính Hãng</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#" class="footer-item__link">Kênh Người Bán</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#" class="footer-item__link">Flash Sales</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#" class="footer-item__link">Chương Trình Tiếp Thị Liên Kết Shopee</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-2" >
+                        <h3 class="footer__heading">Thanh Toán</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="#" class="footer-item__link"><img class="footer-item__img" src="./assets/img/thanhtoan.png" alt=""></a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    <div class="grid__column-2" >
+                        <h3 class="footer__heading">Theo dõi</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="#" class="footer-item__link">
+                                    <i class="fab fa-facebook footer-item__icon"></i>
+                                    Facebook
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#" class="footer-item__link">
+                                    <i class="fab fa-instagram footer-item__icon"></i>
+                                    Instagram
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#" class="footer-item__link">
+                                    <i class="fab fa-linkedin footer-item__icon"></i>
+                                    Linkedin</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-2" >
+                        <h3 class="footer__heading">Vào cửa hàng trên ứng dụng shopee</h3>
+                        <div class="footer__download">
+                            <img src="assets/img/qrcode.png" class="footer__download-qr">
+                            <div class="footer__download-apps">
+                                <a href="#" class="footer__download-app-link">
+                                    <img src="assets/img/ggplay.png" class="footer__download-app-img">
+                                </a>
+        
+                                <a href="#" class="footer__download-app-link">
+                                    <img src="assets/img/appstore.png" class="footer__download-app-img">
+                                </a>
+                                <a href="#" class="footer__download-app-link">
+                                    <img src="assets/img/appgalleyr.png" class="footer__download-app-img">
+                                </a>
+                            </div>
+                        </div>
+        
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="grid wide">
+                    <p class="footer__text">@2021 - Bản quyền thuộc về Công ty</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
+
+
